@@ -86,5 +86,4 @@ function fb_passport(User, passport, configAuth) {
 
 }
 
-
 module.exports = fb_passport;

@@ -1,15 +1,15 @@
 module.exports = {
 
     'facebookAuth': {
-        'clientID': '1460008627369901', // your App ID
-        'clientSecret': '234313a44c91e8a0a07d60f0df601c48', // your App Secret
-        'callbackURL': 'http://localhost:8080/auth/facebook/callback',
+        'clientID': '1468630653254648', // your App ID
+        'clientSecret': 'd1f6830be2cfb0b814f73fe0a3cc3ca7', // your App Secret
+        'callbackURL': 'http://localhost:3500/auth/facebook/callback',
         'profileFields': ["email", "displayName", "name", "photos"]
     },
 
     'googleAuth': {
-        'clientID': '391943635759-050sq0jduv1pb50t0t6n8q0meh6bkgbe.apps.googleusercontent.com',
-        'clientSecret': 'TlLrNDeIWmgYRHWuDjW6wG4b',
-        'callbackURL': 'http://localhost:8080/auth/google/callback'
+        'clientID': '843045556936-rreh3n9vgmenkmlj0ev6l3624k7nldnd.apps.googleusercontent.com',
+        'clientSecret': 'dMcsEqtS9pMB7ULfe_8PLNna',
+        'callbackURL': 'http://localhost:3500/auth/google/callback'
     }
 };
