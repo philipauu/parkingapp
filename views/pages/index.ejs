@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
+<% include ../partials/head %>
 
-    <div class="jumbotron text-center">
-        <h1>PARING APP</h1>
-        <p>We specialize finding parking spaces for you</p>
+    <body>
 
-        <form class="form-inline">
-            <div class="input-group">
-                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
+        <div class="jumbotron text-center">
+            <h1>PARKING APP</h1>
+            <p>We specialize finding parking spaces for you</p>
+
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>About Company Page</h2>
+                    <h4>Lorem ipsum..</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.</p>
+                    <button class="btn btn-default btn-lg">Get in Touch</button>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-signal logo"></span>
                 </div>
             </div>
-        </form>
+        </div>
 
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>About Company Page</h2>
-                <h4>Lorem ipsum..</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.</p>
-                <button class="btn btn-default btn-lg">Get in Touch</button>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-signal logo"></span>
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-globe logo"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h2>Our Values</h2>
+                    <h4>
+                        <strong>MISSION:</strong> TO MAKE PARKING EASIER FOR YOU</h4>
+                    <p>
+                        <strong>VISION:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo"></span>
-            </div>
-            <div class="col-sm-8">
-                <h2>Our Values</h2>
-                <h4>
-                    <strong>MISSION:</strong> TO MAKE PARKING EASIER FOR YOU</h4>
-                <p>
-                    <strong>VISION:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </div>
-
- 
         <div class="container-fluid text-center bg-grey">
             <h2>Portfolio</h2>
             <h4>Where you can park</h4>
@@ -132,8 +133,6 @@
                 </a>
             </div>
 
-
-
             <div class="container-fluid bg-grey">
                 <h2 class="text-center">CONTACT</h2>
                 <div class="row">
@@ -170,6 +169,27 @@
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQE9ebWD4qyXwH9G_D0A2aMAGl6koQA8k&callback=initMap">
             </script>
 
+
+            <div class="container">
+
+                <div class="jumbotron text-center">
+
+                    <p>Login or Register with:</p>
+
+                    <a href="/login" class="btn btn-default">
+                        <span class="fa fa-user"></span> Local Login</a>
+                    <a href="/signup" class="btn btn-default">
+                        <span class="fa fa-user"></span> Local Signup</a>
+                    <a href="/auth/facebook" class="btn btn-primary">
+                        <span class="fa fa-facebook"></span> Facebook</a>
+                    <a href="/auth/google" class="btn btn-danger">
+                        <span class="fa fa-google-plus"></span> Google+</a>
+
+                </div>
+
+            </div>
+
+
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
@@ -186,7 +206,7 @@
                                 <a href="#about">ABOUT</a>
                             </li>
                             <li>
-                                <a href="#portfolio">PORTFOLIO/a>
+                                <a href="#portfolio">PORTFOLIO</a>
                             </li>
                             <li>
                                 <a href="#contact">CONTACT</a>
