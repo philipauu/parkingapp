@@ -10,13 +10,21 @@
             <p>We specialize finding parking spaces for you</p>
 
             <form class="form-inline">
-                <div class="input-group">
-                    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-danger">Subscribe</button>
-                    </div>
+
+                <div class="container text-center">
+
+                    <a href="/login" class="btn btn-default">
+                        <span class="fa fa-user"></span> Local Login</a>
+                    <a href="/signup" class="btn btn-default">
+                        <span class="fa fa-user"></span> Local Signup</a>
+                    <a href="/auth/facebook" class="btn btn-primary">
+                        <span class="fa fa-facebook"></span> Facebook</a>
+                    <a href="/auth/google" class="btn btn-danger">
+                        <span class="fa fa-google-plus"></span> Google+</a>
+
                 </div>
-            </form>
+        </div>
+        </form>
 
         </div>
 
@@ -63,7 +71,7 @@
             <div class="row text-center">
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="images/hongkong.jpg" alt="Indoor">
+                        <img src="images/indoor.jpg" alt="Indoor">
                         <p>
                             <strong>Indoor</strong>
                         </p>
@@ -72,7 +80,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="images/la.jpg" alt="Outdoor">
+                        <img src="images/outdoor.jpg" alt="Outdoor">
                         <p>
                             <strong>Outdoor</strong>
                         </p>
@@ -81,7 +89,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="images/london.jpg" alt="Meter Parking">
+                        <img src="images/meter.jpg" alt="Meter Parking">
                         <p>
                             <strong>Meter Parking</strong>
                         </p>
@@ -154,7 +162,7 @@
                                 <input class="form-control" id="email" name="email" value="philipauu@gmail.com" placeholder="Email" type="email" required>
                             </div>
                         </div>
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5">phil is cool</textarea>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5">hihihefalkfjalkjfeaifjeal</textarea>
                         <br>
                         <div class="row">
                             <div class="col-sm-12 form-group">
@@ -168,27 +176,6 @@
             <div id="map"></div>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQE9ebWD4qyXwH9G_D0A2aMAGl6koQA8k&callback=initMap">
             </script>
-
-
-            <div class="container">
-
-                <div class="jumbotron text-center">
-
-                    <p>Login or Register with:</p>
-
-                    <a href="/login" class="btn btn-default">
-                        <span class="fa fa-user"></span> Local Login</a>
-                    <a href="/signup" class="btn btn-default">
-                        <span class="fa fa-user"></span> Local Signup</a>
-                    <a href="/auth/facebook" class="btn btn-primary">
-                        <span class="fa fa-facebook"></span> Facebook</a>
-                    <a href="/auth/google" class="btn btn-danger">
-                        <span class="fa fa-google-plus"></span> Google+</a>
-
-                </div>
-
-            </div>
-
 
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
