@@ -5,7 +5,7 @@ $(document).ready(initMap);
 var default_location = {
     lat: 22.3964,
     lng: 114.1095
-}
+};
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -29,4 +29,9 @@ function initMap() {
             map: map
         });
     }
+}
+
+function activatePlacesSearch() {
+    var input = document.getElementById('pac-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
 }
