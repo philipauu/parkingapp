@@ -10,7 +10,8 @@ var default_location = {
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
-        center: default_location
+        center: default_location,
+        mapTypeID: google.maps.MapTypeId.ROADMAP
     });
 
     var script = document.createElement('script');
@@ -21,7 +22,7 @@ function initMap() {
         var location = {
             lat: data.results[counter].latitude,
             lng: data.results[counter].longitude
-        }
+        }  
 
         var marker = new google.maps.Marker({
 
@@ -35,4 +36,24 @@ function initMap() {
 function activatePlacesSearch() {
     var input = document.getElementById('pac-input');
     var autocomplete = new google.maps.places.Autocomplete(input);
-}
+    autocomplete.bindTo('bounds', map);
+
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            return;
+        }
+        if (place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+        } else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(17);
+        }
+        marker.setPlace(({
+            placeID: place.place_id,
+            location: place.geomtry.location
+        }));
+    });
+};
+
+google.maps.event.addDomListener(window, 'load', initMap);
