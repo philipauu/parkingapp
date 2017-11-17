@@ -28,6 +28,7 @@ function initMap() {
             position: location,
             map: map
         });
+
     }
 }
 
