@@ -22,7 +22,7 @@ function initMap() {
         var location = {
             lat: data.results[counter].latitude,
             lng: data.results[counter].longitude
-        }  
+        }
 
         var marker = new google.maps.Marker({
 
@@ -31,9 +31,7 @@ function initMap() {
         });
 
     }
-}
 
-function activatePlacesSearch() {
     var input = document.getElementById('pac-input');
     var autocomplete = new google.maps.places.Autocomplete(input);
     autocomplete.bindTo('bounds', map);
@@ -49,11 +47,9 @@ function activatePlacesSearch() {
             map.setCenter(place.geometry.location);
             map.setZoom(17);
         }
-        marker.setPlace(({
-            placeID: place.place_id,
-            location: place.geomtry.location
-        }));
+
+        //ADD INFO WINDOW
+        
+
     });
 };
-
-google.maps.event.addDomListener(window, 'load', initMap);
